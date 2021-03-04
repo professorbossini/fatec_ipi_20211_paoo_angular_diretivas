@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'diretivas';
+
+  pessoas = [];
+  onAdicionarPessoa (pessoa){
+    this.pessoas = [pessoa, ...this.pessoas];
+  }
+
+
+
 }
+
+
